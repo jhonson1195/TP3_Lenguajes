@@ -4,15 +4,19 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
+        <title>ANWA</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/Estilo.css">
         <script type="text/javascript" src="js/java.js"></script>
     </head>
     <body>
+      <header id="encabezado">
+        <h1>Academic Notebook Web App (ANWA)</h1>
+      </header>
         <ul class="navbar">
         <li><a href="https://www.facebook.com">Página principal</a>
         <li><a href="meditaciones.html">Meditaciones</a>
@@ -20,8 +24,7 @@ and open the template in the editor.
         <li><a href="enlaces.html">Enlaces</a>
         </ul>
         <input type="text" name="texto2" value="ok" />
-        <h1>Mi primera página con estilo</h1>
-        <p>No tiene imágenes, pero tiene estilo.
+       
         <input type="button" name = "boton" value="texto del botón" onclick="Mesaje()">
          <form method="get" onclick="Mesaje()">
 
@@ -30,12 +33,12 @@ and open the template in the editor.
             <!Acepto las condiciones<br />
 
         <input type="button" value="Restablece" />
+        <input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
 
-</form>
-       <form>
-<div align="letf">
-  <input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
-  </div>
+        </form>
+            <form>
+       
+
  </form>
     
     </body>

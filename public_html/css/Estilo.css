@@ -1,9 +1,32 @@
-body {
+/*body {
   padding-left: 11em;
   font-family: Georgia, "Times New Roman",
         Times, serif;
   color: tomato;
   background-color: #008000 }
+  */
+body{
+  background:#0079BF;
+  color: #4D4D4D;
+  font:14px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#encabezado{
+  background: #0067A3;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+#encabezado > h1{
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 7px auto;
+  text-align: center;
+}
+
+
+
 ul.navbar {
   list-style-type: none;
   padding: 0;
@@ -12,9 +35,10 @@ ul.navbar {
   top: 2em;
   left: 1em;
   width: 9em }
-h1 {
+/*h1 {
   font-family: Helvetica, Geneva, Arial,
         SunSans-Regular, sans-serif }
+*/
 ul.navbar li {
   background: white;
   margin: 0.5em 0;
