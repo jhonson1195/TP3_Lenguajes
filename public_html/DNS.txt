@@ -1,0 +1,16 @@
+tecanwa@gmail.com
+PrograLenguajes
+
+id
+439520072436-uf4gs63ivhul10p46vmqtjlso2da4vr6.apps.googleusercontent.com
+api_key
+EMwxWQrWY7r5syf1-PEXAoP3 
+
+https://accounts.google.com/o/oauth2/auth?
+ scope=email%20profile&
+ state=%2Fprofile&
+ redirect_uri=http://tecanwa.webcindario.com%2Foauthcallback&
+ response_type=token&
+ client_id=439520072436-uf4gs63ivhul10p46vmqtjlso2da4vr6.apps.googleusercontent.com
+
+https://accounts.google.com/o/oauth2/auth?redirect_uri=http://tecanwa.webcindario.com&response_type=code&client_id=439520072436-uf4gs63ivhul10p46vmqtjlso2da4vr6.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.appdata+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.apps.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.metadata+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.metadata.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.photos.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.scripts&approval_prompt=force&access_type=offline

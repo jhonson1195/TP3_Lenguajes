@@ -1,10 +1,10 @@
-/*body {
+body {
   padding-left: 11em;
   font-family: Georgia, "Times New Roman",
         Times, serif;
   color: tomato;
   background-color: #008000 }
-  */
+
 body{
   background:#0079BF;
   color: #4D4D4D;
@@ -15,6 +15,16 @@ body{
   background: #0067A3;
   height: 40px;
   padding: 5px 10px;
+}
+
+#Autenticacion{
+  background: #0067A3;
+  height: 40px;
+  padding: 5px 10px;
+  text-align: center;
+  bottom: auto;
+      
+  
 }
 
 #encabezado > h1{
@@ -35,10 +45,7 @@ ul.navbar {
   top: 2em;
   left: 1em;
   width: 9em }
-/*h1 {
-  font-family: Helvetica, Geneva, Arial,
-        SunSans-Regular, sans-serif }
-*/
+
 ul.navbar li {
   background: white;
   margin: 0.5em 0;

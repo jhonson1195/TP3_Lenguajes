@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -9,7 +10,7 @@ and open the template in the editor.
         <title>ANWA</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="client.js">
         <link rel="stylesheet" href="css/Estilo.css">
         <script type="text/javascript" src="js/java.js"></script>
     </head>
@@ -18,28 +19,21 @@ and open the template in the editor.
         <h1>Academic Notebook Web App (ANWA)</h1>
       </header>
         <ul class="navbar">
-        <li><a href="https://www.facebook.com">Página principal</a>
-        <li><a href="meditaciones.html">Meditaciones</a>
-        <li><a href="ciudad.html">Mi ciudad</a>
-        <li><a href="enlaces.html">Enlaces</a>
+        <li><a href="https://accounts.google.com/o/oauth2/auth?redirect_uri=http://tecanwa.webcindario.com&response_type=code&client_id=439520072436-uf4gs63ivhul10p46vmqtjlso2da4vr6.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.appdata+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.apps.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.metadata+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.metadata.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.photos.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.scripts&approval_prompt=force&access_type=offline">Autenticacion en Google</a>
         </ul>
-        <input type="text" name="texto2" value="ok" />
-       
-        <input type="button" name = "boton" value="texto del botón" onclick="Mesaje()">
-         <form method="get" onclick="Mesaje()">
-
-         <input type="text" name="texto1" value="Valor por defecto" /><br />
-         <!input type="checkbox" name="condiciones" checked="checked" />
-            <!Acepto las condiciones<br />
-
-        <input type="button" value="Restablece" />
-        <input type="button" value="VOLVER ATRÁS" name="Back2" onclick="history.back()" />
-
+        
+        <header id="Autenticacion"> 
+        <form action="IngresoEvento.html" method="get">
+        <h3>Usuario de Google:</h3>
+        <input type="text" name="Usuario"/>
+        <h3>Contraseña:</h3>
+        <input type="text" name="Contra"/>
+        <h4><input type="submit" name = "boton" value="Aceptar" ></h4>
         </form>
-            <form>
-       
-
- </form>
-    
+        </header>
+        
+        
+        
+        
     </body>
 </html>
