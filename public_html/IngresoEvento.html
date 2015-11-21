@@ -6,24 +6,68 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <link rel="calendar" href="client.js">
+        <title>Agregar eventos</title>
         <script type="text/javascript" src="js/Evento.js"></script>
+        <script type="text/javascript" src="dri.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!--Add a button for the user to click to initiate auth sequence -->
+        <script src="https://apis.google.com/js/client.js?onload=checkAuth"> </script>
+        <script>
+
+window.onload = cambiarfondo;
+
+function cambiarfondo()
+{
+   celda1.style.background="#a4bdfc";
+   celda2.style.background="#7ae7bf";
+   celda3.style.background="#dbadff";
+   celda4.style.background="#ff887c";
+   celda5.style.background="#fbd75b";
+   celda6.style.background="#ffb878";
+   celda7.style.background="#46d6db";
+   celda8.style.background="#e1e1e1";
+   celda9.style.background="#5484ed";
+   celda10.style.background="#51b749";
+   celda11.style.background="#dc2127";
+}
+
+</script>
     </head>
     <body>
         
-        <h1>Aregar Evento</h1>
-        <h3> Titulo <input type="text" name="summary"/> </h3>
-        <h3> Inicio<input type="text" name="start"/> </h3>
-        <h3> Fin<input type="text" name="end"/> </h3>
-        <h3> Lugar<input type="text" name="location"/> </h3>
-        <h3> Descripcion<input type="text" name="description"/> </h3>
-        <h3> Recordatorio <input type="text" name="reminders"/> </h3>
-        <h3> Invitado <input type="text" name="Invitado"/> </h3>
-        <h3> Etiqueta color: <input type="text" name="colorId"/> Texto: <input type="text" name="text"/> </h3>
+        <h1>Aregar Evento:</h1>
+        <h3> Titulo:<input type="text" name="summary"/> </h3>
+        <h3> Inicio:<input type="text" name="start"/>Hora:<input type="text" name="hora1"/></h3>
+        <h3> Fin:<input type="text" name="end"/>Hora:<input type="text" name="hora2"/></h3>
+        <h3> Lugar:<input type="text" name="location"/> </h3>
+        <h3> Descripcion:<input type="text" name="description"/> </h3>
+        <h3> Recordatorio por horas: <input type="text" name="reminders"/> </h3>
+        <h3> Invitado:<input type="text" name="Invitado"/><button type="button" onclick="AgregarCorreo()">Agregar</button></h3>
+        <table  border="1">
+        <tr>
+        <td id="celda1"><input type="checkbox" id="c1" name="casilla1" ></td>
+        <td id="celda2"><input type="checkbox" id="c2" name="casilla2" ></td>
+        <td id="celda3"><input type="checkbox" id="c3" name="casilla3" ></td>
+        <td id="celda4"><input type="checkbox" id="c4" name="casilla4" ></td>
+        <td id="celda5"><input type="checkbox" id="c5" name="casilla5" ></td>
+        <td id="celda6"><input type="checkbox" id="c6" name="casilla6" ></td>
+        <td id="celda7"><input type="checkbox" id="c7" name="casilla7" ></td>
+        <td id="celda8"><input type="checkbox" id="c8" name="casilla8" ></td>
+        <td id="celda9"><input type="checkbox" id="c9" name="casilla9" ></td>
+        <td id="celda10"><input type="checkbox" id="c10" name="casilla10" ></td>
+        <td id="celda11"><input type="checkbox" id="c11" name="casilla11" ></td>
+        </tr>
+        </table>
+        <h3>Etiqueta: <input type="text" name="text"/> </h3>
+        <input type="file" name="archivo" /><br />
+        <button type="button" onclick="AgregarEvento()">Agregar Evento</button>
+        
+        
+        
+        
+            
+            
        
+        
     </body>
 </html>

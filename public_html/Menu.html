@@ -4,13 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/Estilo.css">
+        <script type="text/javascript" src="js/Evento.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=checkAuth"> </script>
+        <script language="javascript">
+                window.onload = CargarNombreUsuario;
+        </script>
     </head>
     <body>
       <header id="encabezado">
         <h1>Academic Notebook Web App (ANWA)</h1>
       </header>
         <header id="Autenticacion">
-            <a href="IngresoEvento.html">Ingresar Evento</a>
+            <h1><label id='Label1'>      </label></h1>
+            <h3><a href="IngresoEvento.html">Ingresar Evento</a></h3>
+            <h3><button type="button" onclick="CargarNombreUsuario()">prueba</button></h3>
+            
         </header>
-    </body>
+        
+        
+     
 </html>
