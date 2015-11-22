@@ -1,0 +1,42 @@
+body{
+	background:#0079BF;
+	color: #4D4D4D;
+	font:14px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid #CCC;
+	padding: 5px,10px;
+	border-radius: 5px;
+	text-decoration: none; /*decorar el nav*/
+	font-weight: bold; /*poner la letra en negrita*/
+}
+
+#encabezado{
+	background: #0067A3;
+	height: 60px;
+	padding: 5px 10px;
+}
+
+#encabezado > h1{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 2.2em;
+	margin: 7px auto;
+	text-align: center;
+}
+
+#agregarevento{
+border-radius: 5px;	
+ width: 1200px;
+		   border-radius: 8px;
+
+		  border: 1px solid #BDC2C9;
+
+
+}
+
+#boton{
+	text-align: center;
+	border-radius:10px;
+
+
+
+}

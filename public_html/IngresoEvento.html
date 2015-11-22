@@ -7,6 +7,8 @@ and open the template in the editor.
 <html>
     <head>
         <title>Agregar eventos</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/IngresarEvento.css">
         <script type="text/javascript" src="js/Evento.js"></script>
         <script type="text/javascript" src="js/Dri.js"></script>
         <meta charset="UTF-8">
@@ -33,32 +35,42 @@ function cambiarfondo()
 
 </script>
     </head>
-    <body>
-        
-        <h1>Aregar Evento:</h1>
-        <h3> Titulo:<input type="text" name="summary"/> </h3>
-        <h3> Inicio:<input type="text" name="start"/>Hora:<input type="text" name="hora1"/></h3>
-        <h3> Fin:<input type="text" name="end"/>Hora:<input type="text" name="hora2"/></h3>
-        <h3> Lugar:<input type="text" name="location"/> </h3>
-        <h3> Descripcion:<input type="text" name="description"/> </h3>
-        <h3> Recordatorio por horas: <input type="text" name="reminders"/> </h3>
-        <h3> Invitado:<input type="text" name="Invitado"/><button type="button" onclick="AgregarCorreo()">Agregar</button></h3>
+    <body><header id="encabezado">
+      <h1>Agregar Evento</h1>
+
+    </header>
+
+    <form id="agregarevento">
+      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Titulo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="summary"/> </h3>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inicio:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="start"/>&nbsp;&nbsp;&nbsp;&nbsp;Hora:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="hora1"/></h3>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fin:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="end"/>&nbsp;&nbsp;&nbsp;&nbsp;Hora:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="hora2"/></h3>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lugar:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="location"/> </h3>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Descripcion:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"/> </h3>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Recordatorio por horas: <input type="text" name="reminders"/> </h3>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Invitado:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Invitado"/>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="AgregarCorreo()">Agregar</button></h3>
         <table  border="1">
         <tr>
-        <td id="celda1"><input type="checkbox" id="c1" name="casilla1" ></td>
-        <td id="celda2"><input type="checkbox" id="c2" name="casilla2" ></td>
-        <td id="celda3"><input type="checkbox" id="c3" name="casilla3" ></td>
-        <td id="celda4"><input type="checkbox" id="c4" name="casilla4" ></td>
-        <td id="celda5"><input type="checkbox" id="c5" name="casilla5" ></td>
-        <td id="celda6"><input type="checkbox" id="c6" name="casilla6" ></td>
-        <td id="celda7"><input type="checkbox" id="c7" name="casilla7" ></td>
-        <td id="celda8"><input type="checkbox" id="c8" name="casilla8" ></td>
-        <td id="celda9"><input type="checkbox" id="c9" name="casilla9" ></td>
-        <td id="celda10"><input type="checkbox" id="c10" name="casilla10" ></td>
-        <td id="celda11"><input type="checkbox" id="c11" name="casilla11" ></td>
+        <td id="celda1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c1" name="casilla1" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c2" name="casilla2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c3" name="casilla3" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c4" name="casilla4" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c5" name="casilla5" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c6" name="casilla6" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c7" name="casilla7" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c8" name="casilla8" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c9" name="casilla9" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c10" name="casilla10" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c11" name="casilla11" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
         </tr>
         </table>
-        <h3>Etiqueta: <input type="text" name="text"/> </h3>
-        <button type="button" onclick="AgregarEvento()">Agregar Evento</button>
-    </body>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Etiqueta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="text"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+        <header id="boton">
+
+          <button type="button" onclick="AgregarEvento()">Agregar Evento</button>
+          
+        </header>
+      
+    </form>
+        
+        </body>
 </html>
