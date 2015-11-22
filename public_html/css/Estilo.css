@@ -1,11 +1,4 @@
 body {
-  padding-left: 11em;
-  font-family: Georgia, "Times New Roman",
-        Times, serif;
-  color: tomato;
-  background-color: #008000 }
-
-body{
   background:#0079BF;
   color: #4D4D4D;
   font:14px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -14,26 +7,29 @@ body{
 #encabezado{
   background: #0067A3;
   height: 40px;
-  padding: 5px 10px;
-}
-
-#Autenticacion{
-  background: #0067A3;
-  height: 40px;
-  padding: 5px 10px;
-  text-align: center;
-  bottom: auto;
-      
-  
+  padding: 40px 10px;
 }
 
 #encabezado > h1{
   color: #FFF;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2.2em;
   margin: 7px auto;
   text-align: center;
 }
+
+#Autenticacion{
+  background: #0067A3;
+  height: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  bottom: auto;
+  font-size: 2.2em;
+      
+  
+}
+
+
 
 
 
