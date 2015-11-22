@@ -18,7 +18,7 @@ gapi.auth.authorize(
   //window.onload = checkAuth;
 function comprobarCheck(){
     
-    if(document.getElementById("c1").checked){alert("ok");return '1';};
+    if(document.getElementById("c1").checked){return '1';};
     if(document.getElementById("c2").checked){return '2';}
     if(document.getElementById("c3").checked){return '3';}
     if(document.getElementById("c4").checked){return '4';}
@@ -75,10 +75,14 @@ Cuerpo.colorId=comprobarCheck();
          'calendarId': 'primary',
 	 'resource': Cuerpo
        });
+       
+     
      request.execute(function(resp) {
+         
        console.log(resp);
 	  if (resp.id){
 	  	alert("Event was successfully added to the calendar!");
+                alert(resp.id);
 	  }
 	  else{
 	  	alert("An error occurred. Please try again later.")
@@ -91,24 +95,16 @@ Cuerpo.colorId=comprobarCheck();
    
    function CargarNombreUsuario() {
   gapi.client.load('plus', 'v1').then(function() {
-    
-    
     var request = gapi.client.plus.people.get({
   'userId' : 'me'
     });
-  
-  
   request.execute(function(resp) {
-      
   document.getElementById("Label1").innerHTML = resp.displayName;
   console.log('ID: ' + resp.id);
   console.log('Display Name: ' + resp.displayName);
   console.log('Image URL: ' + resp.image.url);
   console.log('Profile URL: ' + resp.url);
-});
-    
-    
-    
+});  
   });
 }
 
