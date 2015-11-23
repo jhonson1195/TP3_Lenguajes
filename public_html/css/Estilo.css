@@ -2,12 +2,19 @@ body {
   background:#0079BF;
   color: #4D4D4D;
   font:14px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #CCC;
+  padding: 80px 0px 50px 70px;
+  text-decoration: none; /*decorar el nav*/
+  font-weight: bold; /*poner la letra en negrita*/
+  border-radius: 5px; 
+ 
+
 }
 
 #encabezado{
   background: #0067A3;
-  height: 40px;
-  padding: 40px 10px;
+  height: 60px;
+  
 }
 
 #encabezado > h1{
@@ -16,6 +23,7 @@ body {
   font-size: 2.2em;
   margin: 7px auto;
   text-align: center;
+  padding: 5px 10px 50px 10px;
 }
 
 #Autenticacion{
@@ -25,11 +33,20 @@ body {
   text-align: center;
   bottom: auto;
   font-size: 2.2em;
+  
       
   
 }
 
+#menu{
+  padding: 30px 10px 5px 100px;
+  border-radius: 5px; 
+  width: 1200px;
+       border-radius: 8px;
 
+      border: 3px solid #BDC2C9;
+
+}
 
 
 

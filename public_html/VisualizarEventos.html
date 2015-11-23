@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Visualizar eventos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/visualizar.css">
+    <script type="text/javascript" src="js/Calendario.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+    
+<script>
+
+window.onload = cargar;
+function cargar(){
+    cambiarfondo();
+    CargarCalendario();
+}
+
+function cambiarfondo()
+{
+   celda1.style.background="#a4bdfc";
+   celda2.style.background="#7ae7bf";
+   celda3.style.background="#dbadff";
+   celda4.style.background="#ff887c";
+   celda5.style.background="#fbd75b";
+   celda6.style.background="#ffb878";
+   celda7.style.background="#46d6db";
+   celda8.style.background="#e1e1e1";
+   celda9.style.background="#5484ed";
+   celda10.style.background="#51b749";
+   celda11.style.background="#dc2127";
+}
+
+</script>
+  </head>
+  <body>
+    <header id="encabezado">
+        <h1>Visualizar eventos</h1>
+      </header>
+   <form id= "menu">
+    <header id="Calendario"></header>
+  
+  <h3>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="Dias()">Dia actual</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="SieteDias()">7 dias</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="MestDias()">Mes</button></h3>
+   <h3>&nbsp;&nbsp;&nbsp;&nbsp;Etiqueta:</h3>
+   <table  border="1">
+        <tr>
+        <td id="celda1">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c1" name="casilla1" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c2" name="casilla2" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda3">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c3" name="casilla3" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda4">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c4" name="casilla4" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda5">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c5" name="casilla5" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda6">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c6" name="casilla6" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda7">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c7" name="casilla7" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda8">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c8" name="casilla8" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda9">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c9" name="casilla9" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda10">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c10" name="casilla10" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td id="celda11">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="c11" name="casilla11" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+   </table>
+   <h3>
+   &nbsp;&nbsp;&nbsp;&nbsp;Lugar:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Lugar"/>
+   &nbsp;&nbsp;&nbsp;&nbsp;Descripcion:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"/> </h3>
+  
+  <div id="Resulatdos"></div>
+     
+   </form>
+  
+  <script src="js/angular.min.js"></script>
+  </body>
+</html>
+
